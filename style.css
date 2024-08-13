@@ -1,0 +1,148 @@
+@font-face {
+    font-family: Outfit;
+    src: url('assets/fonts/outfit/Outfit-VariableFont_wght.ttf');
+}
+
+@font-face {
+    font-family: Young-Serif;
+    src: url('assets/fonts/young-serif/YoungSerif-Regular.ttf');
+}
+
+html, body {
+    margin: 0;
+    height: 100%;
+    font-family: Outfit, serif;
+}
+
+body {
+    background-color: #f5ecec;
+    display: flex;
+    flex-direction: column;
+}
+
+p, li {
+    color: hsl(30, 10%, 34%);
+    font-weight: 400;
+}
+
+b {
+    color: black;
+    font-weight: 450;
+}
+
+.post-recipe {
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 700px;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.post-recipe img {
+    width: 100%;
+    max-width: 630px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+@media screen and (min-width: 700px) {
+    .post-recipe img {
+        margin-top: 20px;
+        border-radius: 5px;
+    }
+    .post-recipe {
+        margin-top: 50px;
+        border-radius: 10px;
+    }
+    body {
+        background-color: hsl(30, 54%, 90%);
+    }
+}
+
+.recipe-heading {
+    font-family: Young-Serif, serif;
+    font-weight: 400;
+}
+
+h2 {
+    color: hsl(14, 45%, 36%);
+    font-family: Young-Serif, serif;
+    font-weight: 400;
+}
+
+.preparation-time {
+    padding: 10px 0 10px 0;
+    background-color: hsl(330, 100%, 98%);
+    border-radius: 10px;
+}
+
+.preparation-time h3 {
+    color: hsl(332, 51%, 32%);
+    padding-left: 30px;
+}
+
+.recipe-opening, .ingredients, .instructions, .nutrition-info {
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+ol, ul {
+    padding-left: 20px;
+}
+
+.preparation-time ul {
+    padding-left: 50px;
+}
+
+ol li::marker {
+    color: hsl(14, 45%, 36%);
+    font-weight: 700;
+}
+
+ol li, ul li {
+    padding-left: 10px;
+    padding-bottom: 6px;
+}
+
+.nutrition-table {
+    width: 100%;
+    border-spacing: 100px;
+    border-collapse: collapse;
+    border: none;
+}
+
+.nval {
+    color: hsl(14, 45%, 36%);
+    font-weight: 600;
+}
+
+tr:not(.ending) {
+    border-bottom: 1px solid #ccc;
+}
+
+td {
+    padding: 1rem;
+}
+
+hr {
+    display: block;
+    height: 1px;
+    width: 90%;
+    border: 0;
+    border-top: 1px solid #ccc;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0;
+}
+
+.attribution {
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    font-size: 11px;
+    padding-bottom: 30px;
+    padding-top: 5px;
+}
